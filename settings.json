@@ -1,0 +1,162 @@
+{
+  "window.customTitleBarVisibility": "auto",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.fontFamily": "Fira Code",
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#ff0000"
+    }
+  ],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.tabSize": 2,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.showNotAllDocumentsSavedQuestion": false,
+  "git.enableSmartCommit": true,
+  "editor.useTabStops": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderControlCharacters": false,
+  "editor.stickyScroll.enabled": false,
+  "cmakeExplorer.cmakeIntegration": true,
+  "cmake.configureOnEdit": false,
+  "cmake.configureOnOpen": false,
+  "output.smartScroll.enabled": false,
+  "cmake.allowCommentsInPresetsFile": true,
+  "cmake.ctest.parallelJobs": 1,
+  "cmake.ctestPath": "ctest",
+  "cmake.enabledOutputParsers": [
+    "cmake",
+    "gnuld",
+    "msvc",
+    "ghs",
+    "diab",
+    "gcc"
+  ],
+  "terminal.external.linuxExec": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.explorerKind": "external",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "explorer.confirmDelete": false,
+  "cmake.allowUnsupportedPresetsVersions": true,
+  "cmake.buildArgs": [
+    "-j6"
+  ],
+  "git.ignoreMissingGitWarning": true,
+  "editor.accessibilitySupport": "on",
+  "containers.commands.build": "${containerCommand} build --pull --rm -f \"${dockerfile}\" -t ${tag} \"${context}\"",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "accessibility.signals.chatEditModifiedFile": {
+    "sound": "off"
+  },
+  "accessibility.signals.chatRequestSent": {
+    "sound": "off"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "off"
+  },
+  "accessibility.signals.chatUserActionRequired": {
+    "sound": "off"
+  },
+  "accessibility.signals.clear": {
+    "sound": "off"
+  },
+  "accessibility.signals.codeActionApplied": {
+    "sound": "off"
+  },
+  "accessibility.signals.codeActionTriggered": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "off"
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "off"
+  },
+  "accessibility.signals.editsKept": {
+    "sound": "off"
+  },
+  "accessibility.signals.editsUndone": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.nextEditSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.progress": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalCommandSucceeded": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off"
+  },
+  "accessibility.signals.voiceRecordingStarted": {
+    "sound": "off"
+  },
+  "accessibility.signals.voiceRecordingStopped": {
+    "sound": "off"
+  },
+  "clangd.detectExtensionConflicts": false,
+  "hediet.vscode-drawio.resizeImages": null,
+  "python.defaultInterpreterPath": "/bin/python",
+  "explorer.confirmDragAndDrop": false,
+}
