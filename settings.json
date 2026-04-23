@@ -1,62 +1,97 @@
 {
-  "window.customTitleBarVisibility": "auto",
-  "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "window.titleBarStyle": "custom",
+  // View
+  "workbench.tips.enabled": false, // stop showing shortcuts
+  "breadcrumbs.enabled": false, // need thinking
+  "workbench.tree.renderIndentGuides": "none", // no show lines in explorer tree
+  "workbench.tree.indent": 16,
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false, // remove additional info from explorer
+  "git.decorations.enabled": true, // always show git changes in explorer
+  "scm.diffDecorations":"all", // show all git changes in file
+  "editor.occurrencesHighlight":"off", // stop show ident words if curson on it
+  "editor.selectionHighlight": true, // if i select word i want show idents in file
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
+  },
+
+  "editor.lightbulb.enabled": "off", // disable light icon in code for quick action
+
   "workbench.colorTheme": "Catppuccin Latte",
   "workbench.iconTheme": "vscode-great-icons",
-  "editor.fontFamily": "Fira Code",
+  "workbench.sideBar.location": "left",
+  "workbench.secondarySideBar.defaultVisibility": "hidden", // stop showing chat by default
+
+  // show word wrap line
   "editor.rulers": [
     {
       "column": 80,
       "color": "#ff0000"
     }
   ],
-  "editor.wordWrap": "wordWrapColumn",
+
+  "editor.wordWrap": "wordWrapColumn", // move to next view line without creating real line
   "editor.wordWrapColumn": 80,
-  "editor.tabSize": 2,
-  "cmake.pinnedCommands": [
-    "workbench.action.tasks.configureTaskRunner",
-    "workbench.action.tasks.runTask"
-  ],
-  "cmake.showNotAllDocumentsSavedQuestion": false,
-  "git.enableSmartCommit": true,
-  "editor.useTabStops": false,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.renderControlCharacters": false,
-  "editor.stickyScroll.enabled": false,
-  "cmakeExplorer.cmakeIntegration": true,
-  "cmake.configureOnEdit": false,
-  "cmake.configureOnOpen": false,
-  "output.smartScroll.enabled": false,
-  "cmake.allowCommentsInPresetsFile": true,
-  "cmake.ctest.parallelJobs": 1,
-  "cmake.ctestPath": "ctest",
-  "cmake.enabledOutputParsers": [
-    "cmake",
-    "gnuld",
-    "msvc",
-    "ghs",
-    "diab",
-    "gcc"
-  ],
+
+  // Tabs
+  "editor.tabSize": 2, // effective for view and to short for big including
+  "editor.useTabStops": true, // sometimes i have different code styles
+
+  "editor.minimap.enabled": false, // no need minimap
+  "editor.renderWhitespace": "trailing", // show whitespaces only in the end of line
+  "files.trimTrailingWhitespace": true, // need thinking
+  "files.insertFinalNewline": true, // need thinking
+
+  "editor.inlayHints.enabled": "off", // no show helping info for save line space
+
+  "editor.stickyScroll.enabled": true, // show start of class, func or etc at the top of the screen
+
+  "output.smartScroll.enabled": false, // all actions which change "output" log need be showed in the moment
+  "diffEditor.ignoreTrimWhitespace": false, // show all file changes
+
+
+  // default terminal
   "terminal.external.linuxExec": "zsh",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.explorerKind": "external",
   "terminal.integrated.shellIntegration.enabled": false,
-  "editor.inlayHints.enabled": "off",
-  "explorer.confirmDelete": false,
-  "cmake.allowUnsupportedPresetsVersions": true,
-  "cmake.buildArgs": [
-    "-j6"
-  ],
-  "git.ignoreMissingGitWarning": true,
-  "editor.accessibilitySupport": "on",
-  "containers.commands.build": "${containerCommand} build --pull --rm -f \"${dockerfile}\" -t ${tag} \"${context}\"",
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "accessibility.signals.chatEditModifiedFile": {
+
+  "explorer.confirmDelete": false, // no need confirm delete action
+  "explorer.confirmDragAndDrop": false, // disable DnD confirmation
+
+  "containers.commands.build": "${containerCommand} build --pull --rm -f \"${dockerfile}\" -t ${tag} \"${context}\"", // why?
+
+  // Font
+  "editor.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "debug.console.fontSize": 14,
+  "markdown.preview.fontSize": 14,
+
+  // git
+  "git.enableSmartCommit": false, // for stop forgetting about stages
+  "git.autofetch": false, // no need sync remote and local changes auto
+  "git.confirmSync": false, // when i click to sync i ready to make it
+
+  // zen mode
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "none", // need thinking
+  "zenMode.centerLayout": true,
+  "zenMode.fullScreen": true,
+  "zenMode.restore": true,
+
+
+  // disable all sounds
+  "accessibility.signalOptions.volume": 0,
+    "accessibility.signals.chatEditModifiedFile": {
     "sound": "off"
   },
   "accessibility.signals.chatRequestSent": {
@@ -155,8 +190,4 @@
   "accessibility.signals.voiceRecordingStopped": {
     "sound": "off"
   },
-  "clangd.detectExtensionConflicts": false,
-  "hediet.vscode-drawio.resizeImages": null,
-  "python.defaultInterpreterPath": "/bin/python",
-  "explorer.confirmDragAndDrop": false,
 }
