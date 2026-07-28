@@ -3,7 +3,7 @@
   "workbench.tips.enabled": false, // stop showing shortcuts
   "breadcrumbs.enabled": false, // need thinking
   "workbench.tree.renderIndentGuides": "none", // no show lines in explorer tree
-  "workbench.tree.indent": 16,
+  "workbench.tree.indent": 6,
   "explorer.compactFolders": false,
   "explorer.decorations.badges": false, // remove additional info from explorer
   "git.decorations.enabled": true, // always show git changes in explorer
