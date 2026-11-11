@@ -16,3 +16,4 @@ oderwat.indent-rainbow
 rulyotano.tree-extended
 shd101wyy.markdown-preview-enhanced
 yzane.markdown-pdf
+jamitech.simply-blame
